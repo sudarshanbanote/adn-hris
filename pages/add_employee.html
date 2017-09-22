@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!-- 
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.7
+Version: 4.7.5
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+Renew Support: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <!-- BEGIN HEAD -->
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Add New Employee</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="Add new employee." name="description" />
+        <meta content="" name="author" />
+
+        <!-- PARSE JS -->
+        <script src="../functions/global/parse.js"></script>
+        <script src="../functions/global/module.js"></script>
+        <script src="../functions/global/header.js"></script>
+        
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+		 <link href="../assets/global/plugins/bootstrap-sweetalert/sweetalert.css" rel="stylesheet" type="text/css" />
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL STYLES -->
+        <link href="../assets/global/css/components-md.min.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="../assets/global/css/plugins-md.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME GLOBAL STYLES -->
+        <!-- BEGIN THEME LAYOUT STYLES -->
+        <link href="../assets/layouts/layout4/css/layout.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/layouts/layout4/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
+        <link href="../assets/layouts/layout4/css/custom.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME LAYOUT STYLES -->
+        <link rel="shortcut icon" href="favicon.ico" /> </head>
+    <!-- END HEAD -->
+
+    <body class="page-container-bg-solid page-header-fixed page-footer-fixed page-sidebar-closed-hide-logo page-md">
+        <!-- BEGIN HEADER -->
+        <script type="text/javascript">
+            document.write(header);
+        </script>
+        <!-- END HEADER -->
+        <!-- BEGIN HEADER & CONTENT DIVIDER -->
+        <div class="clearfix"> </div>
+        <!-- END HEADER & CONTENT DIVIDER -->
+        <!-- BEGIN CONTAINER -->
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <script type="text/javascript">
+                document.write(sidebar);
+            </script>
+            <!-- END SIDEBAR -->
+            <!-- BEGIN CONTENT -->
+            <div class="page-content-wrapper">
+                <!-- BEGIN CONTENT BODY -->
+                <div class="page-content">
+                    <!-- BEGIN PAGE HEAD-->
+                    <div class="page-head">
+                        <!-- BEGIN PAGE TITLE -->
+                        <!--div class="page-title">
+                            <h1>Material Design Form Validation
+                                <small>material design form validation</small>
+                            </h1>
+                        </div-->
+                        <!-- END PAGE TITLE -->
+                        <!-- BEGIN PAGE TOOLBAR -->
+                        <div class="page-toolbar">
+                            <!-- BEGIN THEME PANEL -->
+                            <!-- END THEME PANEL -->
+                        </div>
+                        <!-- END PAGE TOOLBAR -->
+                    </div>
+                    <!-- END PAGE HEAD-->
+                    <!-- BEGIN PAGE BREADCRUMB -->
+                    
+                    <!-- END PAGE BREADCRUMB -->
+                    <!-- BEGIN PAGE BASE CONTENT -->
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- BEGIN VALIDATION STATES-->
+                            <div class="portlet light portlet-fit portlet-form bordered">
+                                <div class="portlet-title">
+                                    <div class="caption">
+                                        <i class=" icon-users font-red"></i>
+                                        <span class="caption-subject font-red sbold uppercase">Add New Employee</span>
+                                    </div>
+                                
+                                </div>
+                                <div class="portlet-body">
+                                    <!-- BEGIN FORM-->
+                                    <form action="#" id="form_sample_3">
+                                        <div class="form-body">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                        <input type="text" class="form-control name-input" name="name" id="name">
+                                                        <label for="form_control_1">Name</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" name="email">
+                                                            <label for="form_control_1">Email</label>
+        													<span class="help-block">Enter the email you want to notify..</span>
+                                                            <span class="input-group-addon">
+                                                                <i class="fa fa-envelope"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                        <input type="text" class="form-control" name="number" id="number">
+                                                        <label for="form_control_1">Mobile Number</label>
+                                                        <span class="help-block">Enter the number you want to notify...</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                        <input type="text" class="form-control" name="empId" id="empId" required>
+                                                        <label for="form_control_1">Employee ID</label>
+                                                        <!--span class="help-block">Enter the number you want to notify...</span-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                        <!--select class="form-control" name="delivery"-->
+                                                        <select class="form-control" name="division" id="division">
+                                                            <option value=""></option>
+                                                            <option value="1">Shared Services Division</option>
+                                                            <option value="2">Business Division</option>
+                                                            <option value="3">Business Support Division</option>
+                                                            <option value="4">Technology Division</option>
+                                                        </select>
+                                                        <label for="form_control_1">Division</label>
+                                                        <span class="help-block">Enter the division to which the employee belongs...</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                        <select class="form-control" name="department" id="department">
+                                                            <option value=""></option>
+                                                            <option value="Accounts & Finance">Accounts & Finance</option>
+                                                            <option value="Administration">Administration</option>
+                                                            <option value="ADN EduServices">ADN EduServices</option>
+                                                            <option value="Chairman's Office">Chairman's Office</option>
+                                                            <option value="Company Secretariat">Company Secretariat</option>
+                                                            <option value="Core Network">Core Network</option>
+                                                            <option value="Customer Care">Customer Care</option>
+                                                            <option value="Digital Business">Digital Business</option>
+                                                            <option value="Domestic Business">Domestic Business</option>
+                                                            <option value="ERP">ERP</option>
+                                                            <option value="External Affairs">External Affairs</option>
+                                                            <option value="Governance & Compliance">Governance & Compliance </option>
+                                                            <option value="Human Resources">Human Resources</option>
+                                                            <option value="Internal Audit">Internal Audit</option>
+                                                            <option value="Internal IT">Internal IT</option>
+                                                            <option value="International Business">International Business</option>
+                                                            <option value="IPT & VC">IPT & VC</option>
+                                                            <option value="Marketing Communication">Marketing Communication</option>
+                                                            <option value="Planning">Planning</option>
+                                                            <option value="Power">Power</option>
+                                                            <option value="Product & Innovation">Product & Innovation</option>
+                                                            <option value="Supply Chain Management">Supply Chain Management</option>
+                                                            <option value="Technical Operations">Technical Operations</option>
+                                                            <option value="Technical Projects & New Initiatives">Technical Projects & New Initiatives</option>
+                                                        </select>
+                                                        <label for="form_control_1">Department</label>
+                                                        <span class="help-block">Enter the department to which the employee belongs...</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                        <select class="form-control" name="unit" id="unit">
+                                                            <option value=""></option>
+                                                            <option value="BSS">BSS</option>
+                                                            <option value="Credit Collection">Credit Collection</option>
+                                                            <option value="Domestic">Domestic</option>
+                                                            <option value="Domestic Business-1">Domestic Business-1</option>
+                                                            <option value="Domestic Business-2">Domestic Business-2</option>
+                                                            <option value="Domestic Business-3">Domestic Business-3</option>
+                                                            <option value="Domestic Business-4">Domestic Business-4</option>
+                                                            <option value="Domestic Business-Franchise">Domestic Business-Franchise</option>
+                                                            <option value="Facilities">Facilities</option>
+                                                            <option value="Fiber">Fiber</option>
+                                                            <option value="International">International</option>
+                                                            <option value="International Procurement">International Procurement</option>
+                                                            <option value="Local Procurement">Local Procurement</option>
+                                                            <option value="Orange Project">Orange Project</option>
+                                                            <option value="Projects">Projects</option>
+                                                            <option value="Regional Business">Regional Business</option>
+                                                            <option value="Regional Operation">Regional Operation</option>
+                                                            <option value="Regulatory Affairs">Regulatory Affairs </option>
+                                                            <option value="Revenue Assurance">Revenue Assurance</option>
+                                                            <option value="Sales Operation">Sales Operation</option>
+                                                            <option value="Security">Security</option>
+                                                            <option value="Transport">Transport</option>
+                                                            <option value="VAT & TAX">VAT & TAX</option>
+                                                            <option value="VSAT">VSAT</option>
+                                                            <option value="Wirehouse">Wirehouse</option>
+                                                            <option value="Wireless Network">Wireless Network</option>
+                                                        </select>
+                                                        <label for="form_control_1">Unit</label>
+                                                        <span class="help-block">Enter the unit to which the employee belongs...</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                        <select class="form-control" name="subUnit" id="subUnit">
+                                                            <option value=""></option>
+                                                            <option value="Fiber Network Operations">Fiber Network Operations</option>
+                                                            <option value="Transmission">Transmission</option>
+                                                            <option value="Wireless Access">Wireless Access</option>
+                                                        </select>
+                                                        <label for="form_control_1">Sub Unit</label>
+                                                        <span class="help-block">Enter the sub unit to which the employee belongs...</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                        <select class="form-control" name="designation" id="designation">
+                                                            <option value=""></option>
+                                                            <option value="1">Shared Services Division</option>
+                                                            <option value="2">Business Division</option>
+                                                            <option value="3">Business Support Division</option>
+                                                            <option value="4">Technology Division</option>
+                                                        </select>
+                                                        <label for="form_control_1">Designation</label>
+                                                        <span class="help-block">Enter the designation of the emplyee...</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                                        <select class="form-control" name="jobTitle" id="jobTitle">
+                                                            <option value=""></option>
+                                                            <option value="1">Shared Services Division</option>
+                                                            <option value="2">Business Division</option>
+                                                            <option value="3">Business Support Division</option>
+                                                            <option value="4">Technology Division</option>
+                                                        </select>
+                                                        <label for="form_control_1">Job Title</label>
+                                                        <span class="help-block">Enter the job title of the employee...</span>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                            
+                                        </div>
+                                        <div class="form-actions">
+                                            <div class="row">
+												<div class="col-md-12">
+                                                    <button type="submit" class="btn dark submitForm" id="submitForm">Sumbit</button>
+                                                    <button type="reset" class="btn default">Reset</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- END FORM-->
+                                </div>
+                            </div>
+                            <!-- END VALIDATION STATES-->
+                        </div>
+                    </div>
+                    <!-- END PAGE BASE CONTENT -->
+                </div>
+                <!-- END CONTENT BODY -->
+            </div>
+            <!-- END CONTENT -->
+            <!-- BEGIN QUICK SIDEBAR -->
+           
+           
+            <!-- END QUICK SIDEBAR -->
+        </div>
+        <!-- END CONTAINER -->
+        <!-- BEGIN FOOTER -->
+        <script type="text/javascript">
+            document.write(footer);
+        </script>
+        <!-- END FOOTER -->
+        <!-- BEGIN QUICK NAV -->
+        
+        <!-- END QUICK NAV -->
+        <!--[if lt IE 9]>
+<script src="../assets/global/plugins/respond.min.js"></script>
+<script src="../assets/global/plugins/excanvas.min.js"></script> 
+<script src="../assets/global/plugins/ie8.fix.min.js"></script> 
+<![endif]-->
+        <!-- BEGIN CORE PLUGINS -->
+        <script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+        <!-- END CORE PLUGINS -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+		<script src="../assets/global/plugins/bootstrap-sweetalert/sweetalert.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jquery-validation/js/additional-methods.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL SCRIPTS -->
+        <script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
+        <!-- END THEME GLOBAL SCRIPTS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="../assets/pages/scripts/form-validation-md.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
+        <!-- BEGIN THEME LAYOUT SCRIPTS -->
+        <script src="../assets/layouts/layout4/scripts/layout.min.js" type="text/javascript"></script>
+        <script src="../assets/layouts/layout4/scripts/demo.min.js" type="text/javascript"></script>
+        <script src="../assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+        <script src="../assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
+        <!-- END THEME LAYOUT SCRIPTS -->
+        <script>
+            $(document).ready(function()
+            {
+                $('#clickmewow').click(function()
+                {
+                    $('#radio1003').attr('checked', 'checked');
+                });
+            })
+        </script>
+		<script src="../functions/apps/add_employee.js"></script>
+    </body>
+
+</html>
