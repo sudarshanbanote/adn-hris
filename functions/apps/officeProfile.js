@@ -7,7 +7,7 @@ $(document).ready(function(){
 		//var empId=localStorage.empId; //gives empid needed to search a perticular employee
 		var empId= 'E10010';
 
-		submitOfficeInfo(empId,officeInfo,function(status){
+		/*submitOfficeInfo(empId,officeInfo,function(status){
 			swal({
 				  title: "Employee Office details updated successfully!",
 				  text: " Your Information has been saved.",
@@ -22,7 +22,7 @@ $(document).ready(function(){
 				  	//window.location.href= "../login.html";	
 			});
 			$("#officeInfo :input").attr("disabled", true);
-		});
+		});*/
 
 	});
 
@@ -59,6 +59,10 @@ $(document).ready(function(){
 		}
 	});
 
+
+//tab 2
+
+
 	$("#submitBankDetails").click(function(){
 		
 		var bankDetails = $("#bankDetails").serializeArray();
@@ -67,8 +71,8 @@ $(document).ready(function(){
 		//var empId=localStorage.empId; //gives empid needed to search a perticular employee
 		var empId= 'E10010';
 		alert("submited");
-		/*
-		submitBankDetails(empId,bankDetails,function(status){
+		
+		submitPayrollInformation(empId,bankDetails,'bankDetails',function(status){
 			swal({
 				  title: "Employee Bank details updated successfully!",
 				  text: " Your Information has been saved.",
@@ -82,7 +86,7 @@ $(document).ready(function(){
 					console.log("Came in Swal");	
 			});
 			//$("#bankDetails :input").attr("disabled", true);
-		});*/
+		});
 	});
 
 	$("#submitSalaryDetails").click(function(){
@@ -93,8 +97,8 @@ $(document).ready(function(){
 		//var empId=localStorage.empId; //gives empid needed to search a perticular employee
 		var empId= 'E10010';
 		alert("submited");
-		/*
-		submitSalaryDetails(empId,salaryDetails,function(status){
+		
+		submitPayrollInformation(empId,salaryDetails,'salaryDetails',function(status){
 			swal({
 				  title: "Employee Salary details updated successfully!",
 				  text: " Your Information has been saved.",
@@ -108,7 +112,7 @@ $(document).ready(function(){
 					console.log("Came in Swal");	
 			});
 			//$("#salaryDetails :input").attr("disabled", true);
-		});*/
+		});
 	});
 
 	$("#submitOtherBenefitDetails").click(function(){
@@ -119,8 +123,8 @@ $(document).ready(function(){
 		//var empId=localStorage.empId; //gives empid needed to search a perticular employee
 		var empId= 'E10010';
 		alert("submited");
-		/*
-		submitOtherBenefitDetails(empId,otherBenefitDetails,function(status){
+		
+		submitPayrollInformation(empId,otherBenefitDetails,'otherBenefitDetails',function(status){
 			swal({
 				  title: "Employee Salary details updated successfully!",
 				  text: " Your Information has been saved.",
@@ -134,7 +138,7 @@ $(document).ready(function(){
 					console.log("Came in Swal");
 			});
 			//$("#otherBenefitDetails :input").attr("disabled", true);
-		});*/
+		});
 	});
 
 	$("#submitCompanyCarDetails").click(function(){
@@ -145,8 +149,8 @@ $(document).ready(function(){
 		//var empId=localStorage.empId; //gives empid needed to search a perticular employee
 		var empId= 'E10010';
 		alert("submited");
-		/*
-		submitCompanyCarDetails(empId,companyCarDetails,function(status){
+		
+		submitPayrollInformation(empId,companyCarDetails,'companyCarDetails',function(status){
 			swal({
 				  title: "Employee Salary details updated successfully!",
 				  text: " Your Information has been saved.",
@@ -160,7 +164,7 @@ $(document).ready(function(){
 					console.log("Came in Swal");
 			});
 			//$("#companyCarDetails :input").attr("disabled", true);
-		});*/
+		});
 	});
 
 	$("#submitPersonalCarDetails").click(function(){
@@ -171,8 +175,8 @@ $(document).ready(function(){
 		//var empId=localStorage.empId; //gives empid needed to search a perticular employee
 		var empId= 'E10010';
 		alert("submited");
-		/*
-		submitPersonalCarDetails(empId,personalCarDetails,function(status){
+		
+		submitPayrollInformation(empId,personalCarDetails,function(status){
 			swal({
 				  title: "Employee Salary details updated successfully!",
 				  text: " Your Information has been saved.",
@@ -186,6 +190,6 @@ $(document).ready(function(){
 					console.log("Came in Swal");
 			});
 			//$("#personalCarDetails :input").attr("disabled", true);
-		});*/
+		});
 	});
 });
