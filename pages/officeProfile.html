@@ -85,7 +85,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <div class="page-head">
                         <!-- BEGIN PAGE TITLE -->
                         <div class="page-title">
-                            <h1>Employee Details | To be filled by HR
+                            <h1>Office Profile
                                 <!-- small>form layouts</small-->
                             </h1>
                         </div>
@@ -108,11 +108,14 @@ License: You must have a valid license purchased only from themeforest(the above
                             <div class="tabbable-line boxless tabbable-reversed">
                                 <ul class="nav nav-tabs">
                                     <li class="active">
-                                        <a href="#tab_0" data-toggle="tab">Official Details</a>
+                                        <a href="#tab_0" data-toggle="tab">Official Info</a>
                                     </li>
                                     <li>
-                                        <a href="#tab_1" data-toggle="tab"> Payroll Information </a>
-                                    </li>                       
+                                        <a href="#tab_1" data-toggle="tab"> Payroll Info </a>
+                                    </li>  
+                                    <li>
+                                        <a href="#tab_2" data-toggle="tab"> Separation Info </a>
+                                    </li>                     
                                 </ul>
                                 <div class="tab-content">
                                 <!-- BEGIN TAB_0-->
@@ -140,7 +143,35 @@ License: You must have a valid license purchased only from themeforest(the above
                                                         <div class="alert alert-success display-hide">
                                                             <button class="close" data-close="alert"></button> Your form validation is successful! </div>
 
-                                                            <div class="row">                          
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Employee Name
+                                                                        <span class="required" aria-required="true"> * </span>
+                                                                        </label>
+                                                                        <input type="text" name="employeeName" id="employeeName" class="form-control">
+                                                                    </div>
+                                                                </div>  
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Employee ID
+                                                                        <span class="required" aria-required="true"> * </span>
+                                                                        </label>
+                                                                        <input type="text" name="employeeId" id="employeeId" class="form-control">
+                                                                    </div>
+                                                                </div>                        
+                                                                </div>
+                                                                <!--/span-->
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">ID card No.
+                                                                        <span class="required" aria-required="true"> * </span>
+                                                                        </label>
+                                                                        <input name="idCardNo" id="idCardNo" type="text" class="form-control" maxlength="15">
+                                                                    </div>
+                                                                </div> 
+
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <label class="control-label">Company Name
@@ -156,78 +187,20 @@ License: You must have a valid license purchased only from themeforest(the above
                                                                     </div>
                                                                 </div>
                                                                 <!--/span-->
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">Employee ID
-																		<span class="required" aria-required="true"> * </span>
-                                                                        </label>
-                                                                        <input type="text" name="employeeId" id="employeeId" class="form-control">
-                                                                    </div>
-                                                                </div>
-                                                                <!--/span-->
                                                             </div>
-                                                            <div class="row">                                                  
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">ID card No.
-																		<span class="required" aria-required="true"> * </span>
-                                                                        </label>
-                                                                        <input name="idCardNo" id="idCardNo" type="text" class="form-control" maxlength="15">
-                                                                    </div>
-                                                                </div> 
-                                                                <div class="col-md-6">
-                                                                    <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
-                                                                        <label class="control-label">Date of Joining
-                                                                            <span class="required" aria-required="true"> * </span>
-                                                                        </label>
-                                                                        <input type="text" class="form-control" readonly data-required="1" id="dateOfJoining" name="dateOfJoining">
-                                                                        <span class="input-group-btn" style="top:11px">
-                                                                            <button class="btn default" type="button">
-                                                                                <i class="fa fa-calendar"></i>
-                                                                            </button>
-                                                                        </span>
-                                                                    </div>
-                                                                    <!-- /input-group -->                      
-                                                                </div>
-                                                                <!--/span-->                                           
-                                                            </div>
-                                                            <div class="row">                                                    
-                                                                <div class="col-md-6">
-                                                                    <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
-                                                                        <label class="control-label">Date of Confirmation
-                                                                        </label>
-                                                                        <input type="text" class="form-control" readonly data-required="1" name="dateofConfirmation" id="dateOfConfirmation">
-                                                                        <span class="input-group-btn" style="top:11px">
-                                                                            <button class="btn default" type="button">
-                                                                                <i class="fa fa-calendar"></i>
-                                                                            </button>
-                                                                        </span>
-                                                                    </div>       
-                                                                </div> 
-                                                                <div class="col-md-6">
-                                                                    <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
-                                                                        <label class="control-label">Date of Seperation
-                                                                        </label>
-                                                                        <input type="text" class="form-control" readonly data-required="1" name="dateOfSeperation" id="dateOfSeperation">
-                                                                        <span class="input-group-btn" style="top:11px">
-                                                                            <button class="btn default" type="button">
-                                                                                <i class="fa fa-calendar"></i>
-                                                                            </button>
-                                                                        </span>
-                                                                    </div>            
-                                                                </div> 
-                                                            </div>
+                                                        
+                                                            
                                                             <div class="row">                                                    
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
-                                                                        <label class="control-label">Office phone
+                                                                        <label class="control-label">Office Phone Number
                                                                         </label>
                                                                         <input name="officePhone" id="officePhone" type="text" class="form-control" maxlength="10">
                                                                     </div>
                                                                 </div>  
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
-                                                                        <label class="control-label">Office Mobile
+                                                                        <label class="control-label">Office Mobile Number
                                                                         </label>
                                                                         <input name="officeMobile" name="officeMobile" type="text" class="form-control" maxlength="10">
                                                                     </div>
@@ -242,288 +215,18 @@ License: You must have a valid license purchased only from themeforest(the above
                                                                         <input id="officeEmailId" name="officeEmailId" type="text" class="form-control" aria-invalid="true" aria-describedby="email-error">                                                           
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">Employee Category
-                                                                            <span class="required" aria-required="true"> * </span>
-                                                                        </label>                                                           
-                                                                        <select class="form-control" name="employeeCategory" id="employeeCategory">
-                                                                            <option value="">Select...</option>
-                                                                        </select>                                                             
-                                                                    </div>
-                                                                </div>
+                                                              
                                                                 <!--/span-->                                                      
                                                             </div>
-                                                            <div class="row">                                                    
+                                                          
+															<div class="row">  
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
-                                                                        <label class="control-label">Employee Grade
-                                                                            <span class="required" aria-required="true"> * </span>
-                                                                        </label>                                                           
-                                                                        <select class="form-control" name="employeeGrade" id="employeeGrade">
-                                                                            <option value="">Select...</option>
-                                                                            <option value="A">A</option>
-                                                                            <option value="B">B</option>
-                                                                            <option value="C">C</option>
-                                                                            <option value="D">D</option>
-																			<option value="E">E</option>
-																			<option value="F">F</option>
-																			<option value="G">G</option>
-																			<option value="H">H</option>
-																			<option value="I">I</option>
-																			<option value="J">J</option>
-																			<option value="K">K</option>
-																			<option value="L">L</option>
-																			<option value="M">M</option>
-																			<option value="N">N</option>
-																			<option value="O">O</option>
-																			<option value="P">P</option>
-                                                                        </select>                                                             
-                                                                    </div>
-                                                                </div>   
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">Division
-                                                                            <span class="required" aria-required="true"> * </span>
-                                                                        </label>                                                           
-                                                                        <select class="form-control" name="Division" id="Division">
-                                                                            <option value="">Select...</option>
-																			<option value="Business">Business</option>
-                                                                            <option value="Business Operation">Business Operation</option>
-                                                                            <option value="Business Support">Business Support</option>
-																			<option value="Shared Services">Shared Services</option>
-																			<option value="Technology">Technology</option>
-                                                                        </select>                                                             
+                                                                        <label class="control-label">Facility
+                                                                        </label>
+                                                                        <input name="facility" id="facility" type="text" class="form-control" maxlength="10">
                                                                     </div>
                                                                 </div> 
-                                                                <!--/span-->                                                      
-                                                            </div> 
-                                                            <div class="row">   
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">Department
-                                                                            <span class="required" aria-required="true"> * </span>
-                                                                        </label>                                                           
-                                                                        <select class="form-control" name="Department" id="Department">
-                                                                            <option value="">Select...</option>
-                                                                            <option value="Accounts & Finance">Accounts & Finance</option>
-                                                                            <option value="Administration">Administration</option>
-																			<option value="ADN EduServices">ADN EduServices</option>
-																			<option value="Chairman's Office">Chairman's Office</option>
-																			<option value="Company Secretariat">Company Secretariat</option>
-																			<option value="Core Network">Core Network</option>
-																			<option value="Customer Care">Customer Care</option>
-																			<option value="Digital Business">Digital Business</option>
-																			<option value="Domestic Business">Domestic Business</option>
-																			<option value="ERP">ERP</option>
-																			<option value="External Affairs">External Affairs</option>
-																			<option value="Governance & Compliance ">Governance & Compliance </option>
-																			<option value="Human Resources">Human Resources</option>
-																			<option value="Internal Audit">Internal Audit</option>
-																			<option value="Internal IT">Internal IT</option>
-																			<option value="International Business">International Business</option>
-																			<option value="IPT & VC">IPT & VC</option>
-																			<option value="Marketing Communication">Marketing Communication</option>
-																			<option value="Planning">Planning</option>
-																			<option value="Power">Power</option>
-																			<option value="Product & Innovation">Product & Innovation</option>
-																			<option value="Supply Chain Management">Supply Chain Management</option>
-																			<option value="Technical Operations">Technical Operations</option>
-																			<option value="Technical Projects & New Initiatives">Technical Projects & New Initiatives</option>
-                                                                        </select>                                                             
-                                                                    </div>
-                                                                </div>                                              
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">Vertical
-                                                                            <span class="required" aria-required="true"> * </span>
-                                                                        </label>                                                           
-                                                                        <select class="form-control" name="vertical" id="vertical">
-                                                                            <option value="">Select...</option>
-                                                                            <option value="BSS">BSS</option>
-                                                                            <option value="Credit Collection">Credit Collection</option>
-																			<option value="Domestic">Domestic</option>
-																			<option value="Domestic Business-1">Domestic Business-1</option>
-																			<option value="Domestic Business-2">Domestic Business-2</option>
-																			<option value="Domestic Business-3">Domestic Business-3</option>
-																			<option value="Domestic Business-4">Domestic Business-4</option>
-																			<option value="Domestic Business-Franchise">Domestic Business-Franchise</option>
-																			<option value="Facilities">Facilities</option>
-																			<option value="Fiber">Fiber</option>
-																			<option value="International">International</option>
-																			<option value="International Procurement">International Procurement</option>
-																			<option value="Local Procurement">Local Procurement</option>
-																			<option value="Orange Project">Orange Project</option>
-																			<option value="Projects">Projects</option>
-																			<option value="Regional Business">Regional Business</option>
-																			<option value="Regional Operation">Regional Operation</option>
-																			<option value="Regulatory Affairs ">Regulatory Affairs </option>
-																			<option value="Revenue Assurance">Revenue Assurance</option>
-																			<option value="Sales Operation">Sales Operation</option>
-																			<option value="Security">Security</option>
-																			<option value="Transport">Transport</option>
-																			<option value="VAT & TAX">VAT & TAX</option>
-																			<option value="VSAT">VSAT</option>
-																			<option value="Wirehouse">Wirehouse</option>
-																			<option value="Wireless Network">Wireless Network</option>
-                                                                        </select>                                                             
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-															<div class="row">   
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">Sub vertical
-                                                                            <span class="required" aria-required="true"> * </span>
-                                                                        </label>                                                           
-                                                                        <select class="form-control" name="subVertical" id="subVertical">
-                                                                            <option value="">Select...</option>
-                                                                            <option value="Fiber Network Operations">Fiber Network Operations</option>
-                                                                            <option value="Transmission">Transmission</option>
-																			<option value="Wireless Access">Wireless Access</option>
-                                                                        </select>                                                             
-                                                                    </div>
-                                                                </div>                                              
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">Reporting Manager E-id & Name
-                                                                            <span class="required" aria-required="true"> * </span>
-                                                                        </label>                                                           
-                                                                        <select class="form-control" name="reportingManagereId&Name" id="reportingManagereId&Name">
-                                                                            <option value="">Select...</option>
-                                                                        </select>                                                             
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-															<div class="row">   
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">Reviewer E-id &Name
-                                                                            <span class="required" aria-required="true"> * </span>
-                                                                        </label>                                                           
-                                                                        <select class="form-control" name="reviewerEid&Name" id="reviewerEid&Name">
-                                                                            <option value="">Select...</option>
-                                                                        </select>                                                             
-                                                                    </div>
-                                                                </div>                                              
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">Business HR SPOC User Id & Full Name
-                                                                            <span class="required" aria-required="true"> * </span>
-                                                                        </label>                                                           
-                                                                        <select class="form-control" name="businessHrSpocUserId&Fullname" id="businessHrSpocUserId&Fullname">
-                                                                            <option value="">Select...</option>
-                                                                        </select>                                                             
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-															<div class="row">   
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">Business HR Head User ID & Full Name
-                                                                            <span class="required" aria-required="true"> * </span>
-                                                                        </label>                                                           
-                                                                        <select class="form-control" name="businessHrHeadUserID&Fullname" id="businessHrHeadUserID&Fullname">
-                                                                            <option value="">Select...</option>
-                                                                        </select>                                                             
-                                                                    </div>
-                                                                </div>                                              
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">Group HR Head User ID & Full Name
-                                                                            <span class="required" aria-required="true"> * </span>
-                                                                        </label>                                                           
-                                                                        <select class="form-control" name="grouphrHeadUserId&fullname" id="grouphrHeadUserId&fullname">
-                                                                            <option value="">Select...</option>
-                                                                        </select>                                                             
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-															<div class="row">   
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">Job Title
-                                                                        </label>
-                                                                        <input type="text" name="jobTitle" id="jobTitle" data-required="1" class="form-control">
-                                                                    </div>
-                                                                </div>                                              
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">Performance Rating FY 15_ 16
-                                                                        </label>
-                                                                        <input type="text" name="performanceRatingFy1516" id="performanceRatingFy1516" data-required="1" class="form-control">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-															<div class="row">   
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">Performance Rating FY 16_ 17
-                                                                        </label>
-                                                                        <input type="text" name="performanceRatingFy1617" id="performanceRatingFy1617" data-required="1" class="form-control">
-                                                                    </div>
-                                                                </div>                                             
-                                                                <div class="col-md-6">
-                                                                    <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
-                                                                        <label class="control-label">Date of Resignation
-                                                                        </label>
-                                                                        <input type="text" class="form-control" readonly data-required="1" name="dateOfResignation" id="dateOfResignation">
-                                                                        <span class="input-group-btn" style="top:11px">
-                                                                            <button class="btn default" type="button">
-                                                                                <i class="fa fa-calendar"></i>
-                                                                            </button>
-                                                                        </span>
-                                                                    </div>                                                               
-                                                                </div>
-                                                            </div>
-															<div class="row">   
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">Seperation Type
-                                                                        </label>                                                           
-                                                                        <select class="form-control" name="SeperationType" id="SeperationType">
-                                                                            <option value="">Select...</option>
-                                                                            <option value="resigned">resigned</option>
-                                                                            <option value="Terminated">Terminated</option>
-																			<option value="dismiss">dismiss</option>
-                                                                        </select>                                                             
-                                                                    </div>
-                                                                </div>                                             
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">Work Permit Number
-                                                                        </label>
-                                                                        <input name="workPermitNumber" id="workPermitNumber" type="text" class="form-control" maxlength="10">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-															<div class="row">                                                    
-                                                                <div class="col-md-6">
-                                                                    <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
-                                                                        <label class="control-label">Effective Date
-                                                                        </label>
-                                                                        <input type="text" class="form-control" readonly data-required="1" name="effectiveDate" id="effectiveDate">
-                                                                        <span class="input-group-btn" style="top:11px">
-                                                                            <button class="btn default" type="button">
-                                                                                <i class="fa fa-calendar"></i>
-                                                                            </button>
-                                                                        </span>
-                                                                    </div>                                                               
-                                                                </div> 
-                                                                <div class="col-md-6">
-                                                                    <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
-                                                                        <label class="control-label">Expiry Date
-                                                                        </label>
-                                                                        <input type="text" class="form-control" readonly data-required="1" name="expiryDate" id="expiryDate">
-                                                                        <span class="input-group-btn" style="top:11px">
-                                                                            <button class="btn default" type="button">
-                                                                                <i class="fa fa-calendar"></i>
-                                                                            </button>
-                                                                        </span>
-                                                                    </div>                                                               
-                                                                </div> 
-                                                            </div>
-															<div class="row">   
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <label class="control-label">City
@@ -531,13 +234,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                                         <input name="city" id="city" type="text" class="form-control" maxlength="10">																		
                                                                     </div>
                                                                 </div>                                             
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label">Facility
-                                                                        </label>
-                                                                        <input name="facility" id="facility" type="text" class="form-control" maxlength="10">
-                                                                    </div>
-                                                                </div>
+                                                                
                                                             </div>
 															<div class="row">   
                                                                 <div class="col-md-6">
@@ -794,13 +491,461 @@ License: You must have a valid license purchased only from themeforest(the above
                                                     </div>
                                                     <div class="form-actions left">
                                                         <button type="button" class="btn default">Cancel</button>
-                                                        <button type="submit" class="btn blue" id="submitOfficeInfo">
+                                                        <button type="button" class="btn blue" id="submitOfficeInfo">
                                                             <i class=""></i> Save</button>
                                                     </div>
                                                 </form>
                                                 <!-- END FORM-->
                                             </div>
                                         </div>
+
+
+
+
+
+
+
+
+
+
+                                        <div class="portlet light bordered">
+                                            <div class="portlet-title">
+                                                <div class="caption">
+                                                    <i class="fa fa-desktop font-blue-hoki"></i>
+                                                    <span class="caption-subject font-green bold uppercase">Joining Details</span>
+                                                    <span class="caption-helper hide">to be filled by HR...</span>
+                                                </div>
+                                                <div class="tools">
+                                                    <a href="" class="collapse"> </a>
+                                                    <a href="#portlet-config" data-toggle="modal" class="config hide"> </a>
+                                                    <a href="" class="reload hide"> </a>
+                                                    <a href="" class="remove hide"> </a>
+                                                </div>
+                                            </div>                                    
+                                            <div class="portlet-body">
+                                                <!-- BEGIN Office Info FORM-->
+                                                <form id="officeInfo" class="horizontal-form" novalidate="novalidate">
+                                                    <div class="form-body">
+                                                        <div class="alert alert-danger display-hide">
+                                                            <button class="close" data-close="alert"></button> You have some form errors. Please check below. </div>
+                                                        <div class="alert alert-success display-hide">
+                                                            <button class="close" data-close="alert"></button> Your form validation is successful! </div>
+
+                                                            
+                                                            <div class="row"> 
+                                                                <div class="col-md-6" style="padding-bottom: 10px">
+                                                                    <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
+                                                                        <label class="control-label">Date of Joining
+                                                                            <span class="required" aria-required="true"> * </span>
+                                                                        </label>
+                                                                        <input type="text" class="form-control" readonly data-required="1" id="dateOfJoining" name="dateOfJoining">
+                                                                        <span class="input-group-btn" style="top:12px">
+                                                                            <button class="btn default" type="button">
+                                                                                <i class="fa fa-calendar"></i>
+                                                                            </button>
+                                                                        </span>
+                                                                    </div>
+                                                                    <!-- /input-group -->                      
+                                                                </div>                                                 
+                                                                <div class="col-md-6" style="padding-bottom: 10px">
+                                                                    <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
+                                                                        <label class="control-label">Date of Confirmation
+                                                                        </label>
+                                                                        <input type="text" class="form-control" readonly data-required="1" name="dateofConfirmation" id="dateOfConfirmation">
+                                                                        <span class="input-group-btn" style="top:12px">
+                                                                            <button class="btn default" type="button">
+                                                                                <i class="fa fa-calendar"></i>
+                                                                            </button>
+                                                                        </span>
+                                                                    </div>       
+                                                                </div>
+                                                                
+                                                                <!--/span-->                                           
+                                                            </div>
+                                                          
+                                                           
+                                                            
+                                                            <div class="row">  
+
+
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Confirmation Status
+                                                                        </label>                                                           
+                                                                        <select class="form-control" name="confirmationStatus" id="confirmationStatus">
+                                                                            <option value="">Please Select</option>
+                                                                            <option value="1">On Probation</option>
+                                                                            <option value="2">Confirmed</option>
+                                                                 </select>                                                             
+                                                                    </div>
+                                                                </div>  
+
+
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Work Permit Number
+                                                                        </label>
+                                                                        <input name="workPermitNumber" id="workPermitNumber" type="text" class="form-control" maxlength="10">
+                                                                    </div>
+                                                                </div>
+
+
+
+
+                                                            </div>
+                                                            <div class="row"  style="padding-bottom: 10px">                                                    
+                                                                <div class="col-md-6" style="padding-bottom: 10px">
+                                                                    <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
+                                                                        <label class="control-label">Work Permit Effective Date
+                                                                        </label>
+                                                                        <input type="text" class="form-control" readonly data-required="1" name="effectiveDate" id="effectiveDate">
+                                                                        <span class="input-group-btn" style="top:11px">
+                                                                            <button class="btn default" type="button">
+                                                                                <i class="fa fa-calendar"></i>
+                                                                            </button>
+                                                                        </span>
+                                                                    </div>                                                               
+                                                                </div> 
+                                                                <div class="col-md-6" style="padding-bottom: 10px">
+                                                                    <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
+                                                                        <label class="control-label">Work Permit Expiry Date
+                                                                        </label>
+                                                                        <input type="text" class="form-control" readonly data-required="1" name="expiryDate" id="expiryDate">
+                                                                        <span class="input-group-btn" style="top:11px">
+                                                                            <button class="btn default" type="button">
+                                                                                <i class="fa fa-calendar"></i>
+                                                                            </button>
+                                                                        </span>
+                                                                    </div>                                                               
+                                                                </div> 
+                                                            </div>
+                                                    </div>
+                                                    <div class="form-actions left">
+                                                        <button type="button" class="btn default">Cancel</button>
+                                                        <button type="button" class="btn blue" id="submitOfficeInfo">
+                                                            <i class=""></i> Save</button>
+                                                    </div>
+                                                </form>
+                                                <!-- END FORM-->
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+                                        <div class="portlet light bordered">
+                                            <div class="portlet-title">
+                                                <div class="caption">
+                                                    <i class="fa fa-desktop font-blue-hoki"></i>
+                                                    <span class="caption-subject font-green bold uppercase">Position History (Starting with latest first)</span>
+                                                    <span class="caption-helper hide">to be filled by HR...</span>
+                                                </div>
+                                                <div class="tools">
+                                                    <a href="" class="collapse"> </a>
+                                                    <a href="#portlet-config" data-toggle="modal" class="config hide"> </a>
+                                                    <a href="" class="reload hide"> </a>
+                                                    <a href="" class="remove hide"> </a>
+                                                </div>
+                                            </div>                                    
+                                            <div class="portlet-body">
+                                                <!-- BEGIN Office Info FORM-->
+                                                <form id="officeInfo" class="horizontal-form" novalidate="novalidate">
+                                                    <div class="form-body">
+                                                        <div class="alert alert-danger display-hide">
+                                                            <button class="close" data-close="alert"></button> You have some form errors. Please check below. </div>
+                                                        <div class="alert alert-success display-hide">
+                                                            <button class="close" data-close="alert"></button> Your form validation is successful! </div>
+
+                                                            
+                                                            
+                                                            <div class="row">                                                    
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Job Title
+                                                                        </label>
+                                                                        <input type="text" name="jobTitle" id="jobTitle" data-required="1" class="form-control">
+                                                                    </div>
+                                                                </div> 
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Employee Category
+                                                                            <span class="required" aria-required="true"> * </span>
+                                                                        </label>                                                           
+                                                                        <select class="form-control" name="employeeCategory" id="employeeCategory">
+                                                                            <option value="">Select...</option>
+                                                                        </select>                                                             
+                                                                    </div>
+                                                                </div>
+                                                                <!--/span-->                                                      
+                                                            </div>
+                                                            <div class="row">                                                    
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Employee Grade
+                                                                            <span class="required" aria-required="true"> * </span>
+                                                                        </label>                                                           
+                                                                        <select class="form-control" name="employeeGrade" id="employeeGrade">
+                                                                            <option value="">Select...</option>
+                                                                            <option value="A">A</option>
+                                                                            <option value="B">B</option>
+                                                                            <option value="C">C</option>
+                                                                            <option value="D">D</option>
+                                                                            <option value="E">E</option>
+                                                                            <option value="F">F</option>
+                                                                            <option value="G">G</option>
+                                                                            <option value="H">H</option>
+                                                                            <option value="I">I</option>
+                                                                            <option value="J">J</option>
+                                                                            <option value="K">K</option>
+                                                                            <option value="L">L</option>
+                                                                            <option value="M">M</option>
+                                                                            <option value="N">N</option>
+                                                                            <option value="O">O</option>
+                                                                            <option value="P">P</option>
+                                                                        </select>                                                             
+                                                                    </div>
+                                                                </div>   
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Division
+                                                                            <span class="required" aria-required="true"> * </span>
+                                                                        </label>                                                           
+                                                                        <select class="form-control" name="Division" id="Division">
+                                                                            <option value="">Select...</option>
+                                                                            <option value="Business">Business</option>
+                                                                            <option value="Business Operation">Business Operation</option>
+                                                                            <option value="Business Support">Business Support</option>
+                                                                            <option value="Shared Services">Shared Services</option>
+                                                                            <option value="Technology">Technology</option>
+                                                                        </select>                                                             
+                                                                    </div>
+                                                                </div> 
+                                                                <!--/span-->                                                      
+                                                            </div> 
+                                                            <div class="row">   
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Department
+                                                                            <span class="required" aria-required="true"> * </span>
+                                                                        </label>                                                           
+                                                                        <select class="form-control" name="Department" id="Department">
+                                                                            <option value="">Select...</option>
+                                                                            <option value="Accounts & Finance">Accounts & Finance</option>
+                                                                            <option value="Administration">Administration</option>
+                                                                            <option value="ADN EduServices">ADN EduServices</option>
+                                                                            <option value="Chairman's Office">Chairman's Office</option>
+                                                                            <option value="Company Secretariat">Company Secretariat</option>
+                                                                            <option value="Core Network">Core Network</option>
+                                                                            <option value="Customer Care">Customer Care</option>
+                                                                            <option value="Digital Business">Digital Business</option>
+                                                                            <option value="Domestic Business">Domestic Business</option>
+                                                                            <option value="ERP">ERP</option>
+                                                                            <option value="External Affairs">External Affairs</option>
+                                                                            <option value="Governance & Compliance ">Governance & Compliance </option>
+                                                                            <option value="Human Resources">Human Resources</option>
+                                                                            <option value="Internal Audit">Internal Audit</option>
+                                                                            <option value="Internal IT">Internal IT</option>
+                                                                            <option value="International Business">International Business</option>
+                                                                            <option value="IPT & VC">IPT & VC</option>
+                                                                            <option value="Marketing Communication">Marketing Communication</option>
+                                                                            <option value="Planning">Planning</option>
+                                                                            <option value="Power">Power</option>
+                                                                            <option value="Product & Innovation">Product & Innovation</option>
+                                                                            <option value="Supply Chain Management">Supply Chain Management</option>
+                                                                            <option value="Technical Operations">Technical Operations</option>
+                                                                            <option value="Technical Projects & New Initiatives">Technical Projects & New Initiatives</option>
+                                                                        </select>                                                             
+                                                                    </div>
+                                                                </div>                                              
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Vertical Unit
+                                                                            <span class="required" aria-required="true"> * </span>
+                                                                        </label>                                                           
+                                                                        <select class="form-control" name="vertical" id="vertical">
+                                                                            <option value="">Select...</option>
+                                                                            <option value="BSS">BSS</option>
+                                                                            <option value="Credit Collection">Credit Collection</option>
+                                                                            <option value="Domestic">Domestic</option>
+                                                                            <option value="Domestic Business-1">Domestic Business-1</option>
+                                                                            <option value="Domestic Business-2">Domestic Business-2</option>
+                                                                            <option value="Domestic Business-3">Domestic Business-3</option>
+                                                                            <option value="Domestic Business-4">Domestic Business-4</option>
+                                                                            <option value="Domestic Business-Franchise">Domestic Business-Franchise</option>
+                                                                            <option value="Facilities">Facilities</option>
+                                                                            <option value="Fiber">Fiber</option>
+                                                                            <option value="International">International</option>
+                                                                            <option value="International Procurement">International Procurement</option>
+                                                                            <option value="Local Procurement">Local Procurement</option>
+                                                                            <option value="Orange Project">Orange Project</option>
+                                                                            <option value="Projects">Projects</option>
+                                                                            <option value="Regional Business">Regional Business</option>
+                                                                            <option value="Regional Operation">Regional Operation</option>
+                                                                            <option value="Regulatory Affairs ">Regulatory Affairs </option>
+                                                                            <option value="Revenue Assurance">Revenue Assurance</option>
+                                                                            <option value="Sales Operation">Sales Operation</option>
+                                                                            <option value="Security">Security</option>
+                                                                            <option value="Transport">Transport</option>
+                                                                            <option value="VAT & TAX">VAT & TAX</option>
+                                                                            <option value="VSAT">VSAT</option>
+                                                                            <option value="Wirehouse">Wirehouse</option>
+                                                                            <option value="Wireless Network">Wireless Network</option>
+                                                                        </select>                                                             
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">   
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group"> 
+                                                                        <label class="control-label">Sub Vertical Unit
+                                                                            <span class="required" aria-required="true"> * </span>
+                                                                        </label>                                                           
+                                                                        <select class="form-control" name="subVertical" id="subVertical">
+                                                                            <option value="">Select...</option>
+                                                                            <option value="Fiber Network Operations">Fiber Network Operations</option>
+                                                                            <option value="Transmission">Transmission</option>
+                                                                            <option value="Wireless Access">Wireless Access</option>
+                                                                        </select>                                                             
+                                                                    </div>
+                                                                </div>                                              
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Reporting Manager/ Supervisor
+                                                                            <span class="required" aria-required="true"> * </span>
+                                                                        </label>                                                           
+                                                                        <select class="form-control" name="reportingManagereId&Name" id="reportingManagereId&Name">
+                                                                            <option value="">Select...</option>
+                                                                        </select>                                                             
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">   
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Reviewer
+                                                                            <span class="required" aria-required="true"> * </span>
+                                                                        </label>                                                           
+                                                                        <select class="form-control" name="reviewerEid&Name" id="reviewerEid&Name">
+                                                                            <option value="">Select...</option>
+                                                                        </select>                                                             
+                                                                    </div>
+                                                                </div>                                              
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">HR SPOC
+                                                                            <span class="required" aria-required="true"> * </span>
+                                                                        </label>                                                           
+                                                                        <select class="form-control" name="businessHrSpocUserId&Fullname" id="businessHrSpocUserId&Fullname">
+                                                                            <option value="">Select...</option>
+                                                                        </select>                                                             
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">   
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Business HR Head
+                                                                            <span class="required" aria-required="true"> * </span>
+                                                                        </label>                                                           
+                                                                        <select class="form-control" name="businessHrHeadUserID&Fullname" id="businessHrHeadUserID&Fullname">
+                                                                            <option value="">Select...</option>
+                                                                        </select>                                                             
+                                                                    </div>
+                                                                </div>                                              
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Group HR Head
+                                                                            <span class="required" aria-required="true"> * </span>
+                                                                        </label>                                                           
+                                                                        <select class="form-control" name="grouphrHeadUserId&fullname" id="grouphrHeadUserId&fullname">
+                                                                            <option value="">Select...</option>
+                                                                        </select>                                                             
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                          
+                                                            
+                                                            </div>                                                          
+                                                    <div class="form-actions left">
+                                                        <button type="button" class="btn default">Cancel</button>
+                                                        <button type="button" class="btn blue" id="submitOfficeInfo">
+                                                            <i class=""></i> Save</button>
+                                                    </div>
+                                                </form>
+                                                <!-- END FORM-->
+                                            </div>
+                                        </div>
+
+                                        <!-- Begin Previous Employement Details--> 
+                                        <div class="portlet light bordered">
+                                            <div class="portlet-title">
+                                                <div class="caption">
+                                                    <i class="fa fa-history font-blue-hoki"></i>
+                                                    <span class="caption-subject font-green bold uppercase">Performance Diary</span>
+                                                    <span class="caption-helper hidden">demo form...</span>
+                                                </div>
+                                                <div class="tools">
+                                                    <a href="" class="collapse"> </a>
+                                                    <a href="#portlet-config" data-toggle="modal" class="config hide"> </a>
+                                                    <a href="" class="reload hide"> </a>
+                                                    <a href="" class="remove hide"> </a>
+                                                </div>
+                                            </div>                                    
+                                            <div class="portlet-body">
+                                                <!-- BEGIN Previous Employment FORM-->
+                                                <form id="previousEmploymentDetail" class="horizontal-form" novalidate="novalidate">
+                                                    <div class="form-body">
+                                                        <div class="alert alert-danger display-hide">
+                                                            <button class="close" data-close="alert"></button> You have some form errors. Please check below. </div>
+                                                        <div class="alert alert-success display-hide">
+                                                            <button class="close" data-close="alert"></button> Your form validation is successful! </div>
+
+
+
+                                                            <div class="row">   
+                                                                                                             
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Performance Rating FY 15_ 16
+                                                                        </label>
+                                                                        <input type="text" name="performanceRatingFy1516" id="performanceRatingFy1516" data-required="1" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Performance Rating FY 16_ 17
+                                                                        </label>
+                                                                        <input type="text" name="performanceRatingFy1617" id="performanceRatingFy1617" data-required="1" class="form-control">
+                                                                    </div>
+                                                                </div> 
+                                                            </div>
+                                                            
+                                                            </div>
+
+
+
+
+                                                    <div class="form-actions left">
+                                                        <button type="button" class="btn default">Cancel</button>
+                                                        <button type="button" class="btn blue" id="submitpreviousEmployment">
+                                                            <i class=""></i> Save</button>
+                                                    </div>
+                                                </form>
+                                                <!-- END FORM-->
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
                                         <!-- Begin Previous Employement Details--> 
                                         <div class="portlet light bordered">
                                             <div class="portlet-title">
@@ -825,11 +970,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                         <div class="alert alert-success display-hide">
                                                             <button class="close" data-close="alert"></button> Your form validation is successful! </div>
 
-                                                        <div class="row">
-                                                            <div class="col-md-12 ">
-                                                                <h5 class="title" style="bottom:30px"><strong> Company Details </strong></h5>
-                                                            </div>
-                                                        </div>
+                                                     
                                                         <div class="row">
                                                             <div class="col-md-6 ">
                                                                 <div class="form-group">
@@ -906,7 +1047,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                     </div>
                                                     <div class="form-actions left">
                                                         <button type="button" class="btn default">Cancel</button>
-                                                        <button type="submit" class="btn blue" id="submitpreviousEmployment">
+                                                        <button type="button" class="btn blue" id="submitpreviousEmployment">
                                                             <i class=""></i> Save</button>
                                                     </div>
                                                 </form>
@@ -932,8 +1073,8 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 </div>
                                             </div>                                    
                                             <div class="portlet-body">
-                                                <!-- BEGIN Bank Details FORM  novalidate="novalidate">-->
-                                                <form id="bankDetails" class="horizontal-form"
+                                                <!-- BEGIN Bank Details FORM-->
+                                                <form id="bankDetails" class="horizontal-form" novalidate="novalidate">
                                                     <div class="form-body">
                                                         <div class="alert alert-danger display-hide">
                                                             <button class="close" data-close="alert"></button> You have some form errors. Please check below. </div>
@@ -983,7 +1124,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                     </div>
                                                     <div class="form-actions left" style="padding-top: 10px">
                                                         <button type="button" class="btn default">Cancel</button>
-                                                        <button type="submit" class="btn blue" id="submitBankDetails">
+                                                        <button type="button" class="btn blue" id="submitBankDetails">
                                                             <i class=""></i> Save</button>
                                                     </div>
                                                 </form>
@@ -997,7 +1138,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 <div class="caption">
                                                     <i class="fa fa-money font-blue-hoki"></i>
                                                     <span class="caption-subject font-green bold uppercase">Salary Details (Monthly)</span>
-                                                    <span class="caption-helper hidden">salary details form...</span>
+                                                    <span class="caption-helper hidden">demo form...</span>
                                                 </div>
                                                 <div class="tools">
                                                     <a href="" class="collapse"> </a>
@@ -1007,8 +1148,8 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 </div>
                                             </div>                                    
                                             <div class="portlet-body">
-                                                <!-- BEGIN salaryDetails FORM novalidate="novalidate"-->
-                                                <form id="salaryDetails" class="horizontal-form">
+                                                <!-- BEGIN salaryDetails FORM-->
+                                                <form id="salaryDetails" class="horizontal-form" novalidate="novalidate">
                                                     <div class="form-body">
                                                         <div class="alert alert-danger display-hide">
                                                             <button class="close" data-close="alert"></button> You have some form errors. Please check below. </div>
@@ -1114,7 +1255,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                     </div>
                                                     <div class="form-actions left">
                                                         <button type="button" class="btn default">Cancel</button>
-                                                        <button type="submit" class="btn blue" id="submitSalaryDetails">
+                                                        <button type="button" class="btn blue" id="submitSalaryDetails">
                                                             <i class=""></i> Save</button>
                                                     </div>
                                                 </form>
@@ -1127,7 +1268,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 <div class="caption">
                                                     <i class="fa fa-dollar font-blue-hoki"></i>
                                                     <span class="caption-subject font-green bold uppercase">Other Benefit Details</span>
-                                                    <span class="caption-helper hidden">other benefit details form...</span>
+                                                    <span class="caption-helper hidden">demo form...</span>
                                                 </div>
                                                 <div class="tools">
                                                     <a href="" class="collapse"> </a>
@@ -1137,8 +1278,8 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 </div>
                                             </div>                                    
                                             <div class="portlet-body">
-                                                <!-- BEGIN otherBenefitDetails FORM novalidate="novalidate"-->
-                                                <form id="otherBenefitDetails" class="horizontal-form">
+                                                <!-- BEGIN otherBenefitDetails FORM-->
+                                                <form id="otherBenefitDetails" class="horizontal-form" novalidate="novalidate">
                                                     <div class="form-body">
                                                         <div class="alert alert-danger display-hide">
                                                             <button class="close" data-close="alert"></button> You have some form errors. Please check below. </div>
@@ -1183,7 +1324,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                     </div>
                                                     <div class="form-actions left">
                                                         <button type="button" class="btn default">Cancel</button>
-                                                        <button type="submit" class="btn blue" id="submitOtherBenefitDetails">
+                                                        <button type="button" class="btn blue" id="submitOtherBenefitDetails">
                                                             <i class=""></i> Save</button>
                                                     </div>
                                                 </form>
@@ -1206,8 +1347,8 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 </div>
                                             </div>                                    
                                             <div class="portlet-body">
-                                                <!-- BEGIN companyCarDetails FORM novalidate="novalidate"-->
-                                                <form id="companyCarDetails" class="horizontal-form">
+                                                <!-- BEGIN companyCarDetails FORM-->
+                                                <form id="companyCarDetails" class="horizontal-form" novalidate="novalidate">
                                                     <div class="form-body">
                                                         <div class="alert alert-danger display-hide">
                                                             <button class="close" data-close="alert"></button> You have some form errors. Please check below. </div>
@@ -1286,7 +1427,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                     </div>
                                                     <div class="form-actions left">
                                                         <button type="button" class="btn default">Cancel</button>
-                                                        <button type="submit" class="btn blue" id="submitCompanyCarDetails">
+                                                        <button type="button" class="btn blue" id="submitCompanyCarDetails">
                                                             <i class=""></i> Save</button>
                                                     </div>
                                                 </form>
@@ -1310,8 +1451,8 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 </div>
                                             </div>                                    
                                             <div class="portlet-body">
-                                                <!-- BEGIN personalCarDetails FORM  novalidate="novalidate"-->
-                                                <form id="personalCarDetails" class="horizontal-form">
+                                                <!-- BEGIN personalCarDetails FORM-->
+                                                <form id="personalCarDetails" class="horizontal-form" novalidate="novalidate">
                                                     <div class="form-body">
                                                         <div class="alert alert-danger display-hide">
                                                             <button class="close" data-close="alert"></button> You have some form errors. Please check below. </div>
@@ -1364,16 +1505,112 @@ License: You must have a valid license purchased only from themeforest(the above
                                                     </div>
                                                     <div class="form-actions left">
                                                         <button type="button" class="btn default">Cancel</button>
-                                                        <button type="submit" class="btn blue" id="submitPersonalCarDetails">
+                                                        <button type="button" class="btn blue" id="submitPersonalCarDetails">
                                                             <i class=""></i> Save</button>
                                                     </div>
                                                 </form>
                                                 <!-- END FORM-->
                                             </div>
                                         </div>	
-										
                                     </div>
                                 <!-- END TAB_1-->
+
+
+
+
+
+                                <!-- BEGIN TAB_2-->
+                                    <div class="tab-pane" id="tab_2"> 
+                                       
+                                        
+                                        <div class="portlet light bordered">
+                                            <div class="portlet-title">
+                                                <div class="caption">
+                                                    <i class="fa fa-car font-blue-hoki"></i>
+                                                    <span class="caption-subject font-green bold uppercase">Separation Details</span>
+                                                    <span class="caption-helper hidden">demo form...</span>
+                                                </div>
+                                                <div class="tools">
+                                                    <a href="" class="collapse"> </a>
+                                                    <a href="#portlet-config" data-toggle="modal" class="config hide"> </a>
+                                                    <a href="" class="reload hide"> </a>
+                                                    <a href="" class="remove hide"> </a>
+                                                </div>
+                                            </div>                                    
+                                            <div class="portlet-body">
+                                                <!-- BEGIN personalCarDetails FORM-->
+                                                <form id="separationDetails" class="horizontal-form" novalidate="novalidate">
+                                                    <div class="form-body">
+                                                        <div class="alert alert-danger display-hide">
+                                                            <button class="close" data-close="alert"></button> You have some form errors. Please check below. </div>
+                                                        <div class="alert alert-success display-hide">
+                                                            <button class="close" data-close="alert"></button> Your form validation is successful! </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                    <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
+                                                                        <label class="control-label">Date of Resignation
+                                                                        </label>
+                                                                        <input type="text" class="form-control" readonly data-required="1" name="dateOfResignation" id="dateOfResignation">
+                                                                        <span class="input-group-btn" style="top:11px">
+                                                                            <button class="btn default" type="button">
+                                                                                <i class="fa fa-calendar"></i>
+                                                                            </button>
+                                                                        </span>
+                                                                    </div>                                                               
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
+                                                                        <label class="control-label">Date of Separation
+                                                                        </label>
+                                                                        <input type="text" class="form-control" readonly data-required="1" name="dateOfSeparation" id="dateOfSeparation">
+                                                                        <span class="input-group-btn" style="top:11px">
+                                                                            <button class="btn default" type="button">
+                                                                                <i class="fa fa-calendar"></i>
+                                                                            </button>
+                                                                        </span>
+                                                                    </div>            
+                                                                </div> 
+                                                                <div class="col-md-6">
+                                                                    <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
+                                                                        <label class="control-label">Effective Date
+                                                                        </label>
+                                                                        <input type="text" class="form-control" readonly data-required="1" name="effectiveDate" id="effectiveDate">
+                                                                        <span class="input-group-btn" style="top:11px">
+                                                                            <button class="btn default" type="button">
+                                                                                <i class="fa fa-calendar"></i>
+                                                                            </button>
+                                                                        </span>
+                                                                    </div>                                                               
+                                                                </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Seperation Type
+                                                                        </label>                                                           
+                                                                        <select class="form-control" name="separationType" id="separationType">
+                                                                            <option value="">Select...</option>
+                                                                            <option value="resigned">resigned</option>
+                                                                            <option value="Terminated">Terminated</option>
+                                                                            <option value="dismiss">dismiss</option>
+                                                                        </select>                                                             
+                                                                    </div>
+                                                                </div> 
+                                                         
+                                                            <!--/span-->
+                                                        </div> 
+                                                        <!--/row-->
+                                                    </div>
+                                                    <div class="form-actions left">
+                                                        <button type="button" class="btn default">Cancel</button>
+                                                        <button type="button" class="btn blue" id="submitSeparationDetails">
+                                                            <i class=""></i> Save</button>
+                                                    </div>
+                                                </form>
+                                                <!-- END FORM-->
+                                            </div>
+                                        </div>  
+                                    </div>
 
 
                                 
