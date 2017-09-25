@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	console.log("Jquery Loaded");
+	//checkInitiate();
 	//var kraCategory = ['Strategic Initiative','Functional Deliverables','Financial Deliverables','Institutionalization Quotient','People Development'];
 	$("#submitForm").click(function(){
 		validateKra();
@@ -8,8 +9,16 @@ $(document).ready(function(){
 		validateKraDraft();
 	});
 });
-
-
+/*
+function checkInitiate(){
+	console.log("Checking wether KRA was initaite");
+	checkInitiate(empId,kraId,function{
+		if(){
+			console.log("valid kra");
+		}else{}
+	});
+}
+*/
 function validateKraDraft(){
 	var empObject = JSON.parse(localStorage.empObject);
 	var grade = empObject.employeeGrade;
@@ -135,7 +144,11 @@ function validateKra(){
 			swal("Error!", "This person does not have Appraisal Process", "danger")
 		}
 	}else if(checkWeight(kraArray) < 100){
-		swal("Error!", "Kra weightage is less than 100!", "warning")
+		if(numberOfCategories(kraArray)==0){
+			swal("Error!", "Please submit a valid KRA entry!", "warning")
+		}else{
+			swal("Error!", "Kra weightage is less than 100!", "warning")
+		}
 		//alert("Less than 100");
 	}else{
 		swal("Error!", "Kra weightage is more than 100!", "warning")

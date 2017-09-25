@@ -20,7 +20,7 @@ $(document).ready(function(){
 		    // ... do something with data(), or this.node(), etc
 		});
 		//console.log(data);
-		var empArray = ['E1001','E1002','E1003'];
+		var empArray = ['E10010','E10011','E10014'];
 		var initiatorId = 'E1006';
 		initiateKRA(empArray,initiatorId);
 	});	

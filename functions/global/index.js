@@ -48,7 +48,7 @@ var sidebar = '<div class="page-sidebar-wrapper">'+
 '                            <h3 class="uppercase">My Tasks</h3>'+
 '                        </li>'+
 '                        <li class="nav-item '+ approvals +' ">'+
-'                            <a href="approvals.html" class="nav-link nav-toggle">'+
+'                            <a href="pages/approvals.html" class="nav-link nav-toggle">'+
 '                                <i class="fa fa-check-square-o"></i>'+
 '                                <span class="title">Approvals</span>'+
 '                                <span class="selected"></span>'+
@@ -56,14 +56,14 @@ var sidebar = '<div class="page-sidebar-wrapper">'+
 '                            </a>'+
 '                        </li>'+
 '                        <li class="nav-item '+ inputRequests +' ">'+
-'                            <a href="inputRequests.html" class="nav-link nav-toggle">'+
+'                            <a href="pages/inputRequests.html" class="nav-link nav-toggle">'+
 '                                <i class="fa fa-sticky-note"></i>'+
 '                                <span class="title">Input Requests</span>'+
 '                                <span class="badge badge-danger">4</span>'+
 '                            </a>'+
 '                        </li>'+
 '                        <li class="nav-item '+ clarifications +' ">'+
-'                            <a href="clarifications.html" class="nav-link nav-toggle">'+
+'                            <a href="pages/clarifications.html" class="nav-link nav-toggle">'+
 '                                <i class="fa fa-comments"></i>'+
 '                                <span class="title">Clarifications</span>'+
 '                                <span class="badge badge-danger">3</span>'+
@@ -73,42 +73,42 @@ var sidebar = '<div class="page-sidebar-wrapper">'+
 '                            <h3 class="uppercase">My Items</h3>'+
 '                        </li>'+
 '                        <li class="nav-item '+ drafts +' ">'+
-'                            <a href="drafts.html" class="nav-link nav-toggle">'+
+'                            <a href="pages/drafts.html" class="nav-link nav-toggle">'+
 '                                <i class="fa fa-pencil-square-o"></i>'+
 '                                <span class="title">Drafts</span>'+
 '                                <span class="badge badge-danger">5</span>'+
 '                            </a>'+
 '                        </li>'+
 '                        <li class="nav-item '+ inProgress +' ">'+
-'                            <a href="inProgress.html" class="nav-link nav-toggle">'+
+'                            <a href="pages/inProgress.html" class="nav-link nav-toggle">'+
 '                                <i class="fa fa-hourglass-1"></i>'+
 '                                <span class="title">In Progress</span>'+
 '                                <span class="badge badge-danger">4</span>'+
 '                            </a>'+
 '                        </li>'+
 '                        <li class="nav-item '+ participated +' ">'+
-'                            <a href="participated.html" class="nav-link nav-toggle">'+
+'                            <a href="pages/participated.html" class="nav-link nav-toggle">'+
 '                                <i class="fa fa-group"></i>'+
 '                                <span class="title">Participated</span>'+
 '                                <span class="badge badge-danger">3</span>'+
 '                            </a>'+
 '                        </li>'+
 '                        <li class="nav-item '+ approved +' ">'+
-'                            <a href="approved.html" class="nav-link nav-toggle">'+
+'                            <a href="pages/approved.html" class="nav-link nav-toggle">'+
 '                                <i class="fa fa-check"></i>'+
 '                                <span class="title">Approved</span>'+
 '                                <span class="badge badge-danger">3</span>'+
 '                            </a>'+
 '                        </li>  '+
 '                        <li class="nav-item '+ rejected +' ">'+
-'                            <a href="rejected.html" class="nav-link nav-toggle">'+
+'                            <a href="pages/rejected.html" class="nav-link nav-toggle">'+
 '                                <i class="fa fa-remove"></i>'+
 '                                <span class="title">Rejected</span>'+
 '                                <span class="badge badge-danger">3</span>'+
 '                            </a>'+
 '                        </li>  '+
 '                        <li class="nav-item '+ withdrawn +' ">'+
-'                            <a href="withdrawn.html" class="nav-link nav-toggle">'+
+'                            <a href="pages/withdrawn.html" class="nav-link nav-toggle">'+
 '                                <i class="fa fa-mail-reply"></i>'+
 '                                <span class="title">Withdrawn</span>'+
 '                                <span class="badge badge-danger">3</span>'+
@@ -118,7 +118,7 @@ var sidebar = '<div class="page-sidebar-wrapper">'+
 '                            <h3 class="uppercase">Admin</h3>'+
 '                        </li>'+
 '                        <li class="nav-item '+ admin +' ">'+
-'                            <a href="admin.html" class="nav-link nav-toggle">'+
+'                            <a href="pages/admin.html" class="nav-link nav-toggle">'+
 '                                <i class="fa fa-gear"></i>'+
 '                                <span class="title">Admin</span>'+
 '                            </a>'+
@@ -136,8 +136,8 @@ var header = '<div class="page-header navbar navbar-fixed-top">'+
 '            <div class="page-header-inner ">'+
 '                <!-- BEGIN LOGO -->'+
 '                <div class="page-logo">'+
-'                    <a href="../index.html">'+
-'                        <img src="../assets/layouts/layout4/img/logo-light.png" alt="logo" class="logo-default" /> </a>'+
+'                    <a href="index.html">'+
+'                        <img src="assets/layouts/layout4/img/logo-light.png" alt="logo" class="logo-default" /> </a>'+
 '                    <div class="menu-toggler sidebar-toggler">'+
 '                        <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->'+
 '                    </div>'+
@@ -298,6 +298,82 @@ var header = '<div class="page-header navbar navbar-fixed-top">'+
 '                            </li>'+
 '                            <!-- END NOTIFICATION DROPDOWN -->'+
 '                            <li class="separator hide"> </li>'+
+'                            <!-- BEGIN INBOX DROPDOWN -->'+
+'                            <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->'+
+'                            <li class="dropdown dropdown-extended dropdown-inbox dropdown-dark" id="header_inbox_bar">'+
+'                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">'+
+'                                    <i class="icon-envelope-open"></i>'+
+'                                    <span class="badge badge-danger"> 4 </span>'+
+'                                </a>'+
+'                                <ul class="dropdown-menu">'+
+'                                    <li class="external">'+
+'                                        <h3>You have'+
+'                                            <span class="bold">7 New</span> Messages</h3>'+
+'                                        <a href="app_inbox.html">view all</a>'+
+'                                    </li>'+
+'                                    <li>'+
+'                                        <ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">'+
+'                                            <li>'+
+'                                                <a href="#">'+
+'                                                    <span class="photo">'+
+'                                                        <img src="assets/layouts/layout3/img/avatar2.jpg" class="img-circle" alt=""> </span>'+
+'                                                    <span class="subject">'+
+'                                                        <span class="from"> Lisa Wong </span>'+
+'                                                        <span class="time">Just Now </span>'+
+'                                                    </span>'+
+'                                                    <span class="message"> Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh... </span>'+
+'                                                </a>'+
+'                                            </li>'+
+'                                            <li>'+
+'                                                <a href="#">'+
+'                                                    <span class="photo">'+
+'                                                        <img src="assets/layouts/layout3/img/avatar3.jpg" class="img-circle" alt=""> </span>'+
+'                                                    <span class="subject">'+
+'                                                        <span class="from"> Richard Doe </span>'+
+'                                                        <span class="time">16 mins </span>'+
+'                                                    </span>'+
+'                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>'+
+'                                                </a>'+
+'                                            </li>'+
+'                                            <li>'+
+'                                                <a href="#">'+
+'                                                    <span class="photo">'+
+'                                                        <img src="assets/layouts/layout3/img/avatar1.jpg" class="img-circle" alt=""> </span>'+
+'                                                    <span class="subject">'+
+'                                                        <span class="from"> Bob Nilson </span>'+
+'                                                        <span class="time">2 hrs </span>'+
+'                                                    </span>'+
+'                                                    <span class="message"> Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>'+
+'                                                </a>'+
+'                                            </li>'+
+'                                            <li>'+
+'                                                <a href="#">'+
+'                                                    <span class="photo">'+
+'                                                        <img src="assets/layouts/layout3/img/avatar2.jpg" class="img-circle" alt=""> </span>'+
+'                                                    <span class="subject">'+
+'                                                        <span class="from"> Lisa Wong </span>'+
+'                                                        <span class="time">40 mins </span>'+
+'                                                    </span>'+
+'                                                    <span class="message"> Vivamus sed auctor 40% nibh congue nibh... </span>'+
+'                                                </a>'+
+'                                            </li>'+
+'                                            <li>'+
+'                                                <a href="#">'+
+'                                                    <span class="photo">'+
+'                                                        <img src="assets/layouts/layout3/img/avatar3.jpg" class="img-circle" alt=""> </span>'+
+'                                                    <span class="subject">'+
+'                                                        <span class="from"> Richard Doe </span>'+
+'                                                        <span class="time">46 mins </span>'+
+'                                                    </span>'+
+'                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>'+
+'                                                </a>'+
+'                                            </li>'+
+'                                        </ul>'+
+'                                    </li>'+
+'                                </ul>'+
+'                            </li>'+
+'                            <!-- END INBOX DROPDOWN -->'+
+'                            <li class="separator hide"> </li>'+
 '                            <!-- BEGIN TODO DROPDOWN -->'+
 '                            <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->'+
 '                            <li class="dropdown dropdown-extended dropdown-tasks dropdown-dark" id="header_task_bar">'+
@@ -415,7 +491,7 @@ var header = '<div class="page-header navbar navbar-fixed-top">'+
 '                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">'+
 '                                    <span class="username username-hide-on-mobile"> Nick </span>'+
 '                                    <!-- DOC: Do not remove below empty space( ) as its purposely used -->'+
-'                                    <img alt="" class="img-circle" src="../assets/layouts/layout4/img/avatar9.jpg" /> </a>'+
+'                                    <img alt="" class="img-circle" src="assets/layouts/layout4/img/avatar9.jpg" /> </a>'+
 '                                <ul class="dropdown-menu dropdown-menu-default">'+
 '                                    <li>'+
 '                                        <a href="page_user_profile_1.html">'+
@@ -424,6 +500,12 @@ var header = '<div class="page-header navbar navbar-fixed-top">'+
 '                                    <li>'+
 '                                        <a href="app_calendar.html">'+
 '                                            <i class="icon-calendar"></i> My Calendar </a>'+
+'                                    </li>'+
+'                                    <li>'+
+'                                        <a href="app_inbox.html">'+
+'                                            <i class="icon-envelope-open"></i> My Inbox'+
+'                                            <span class="badge badge-danger"> 3 </span>'+
+'                                        </a>'+
 '                                    </li>'+
 '                                    <li>'+
 '                                        <a href="app_todo_2.html">'+

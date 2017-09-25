@@ -5,7 +5,8 @@ $(document).ready(function(){
 		var empId=localStorage.empId;
 		var personalArray = $("#form_sample_1").serializeArray();
 		console.log(personalArray);
-		submitPersonal(empId,personalArray,function(status){
+		var type= "personal";
+		submitPersonal(empId,personalArray,type,function(status){
 			swal({
 				  title: "Employee Personal updated successfully!",
 				  text: " Your Information has been saved.",
@@ -29,7 +30,8 @@ $(document).ready(function(){
 		var addressArray = $("#form_sample_2").serializeArray();
 		console.log(addressArray);
 		alert("going in submit Address");
-		submitAddress(empId,addressArray,function(status){
+		var type= "address";
+		submitPersonal(empId,addressArray,type,function(status){
 			console.log("Updated address valuess");
 			swal({
 				  title: "Employee Address updated successfully!",
@@ -45,6 +47,6 @@ $(document).ready(function(){
 				  	//window.location.href= "../login.html";	
 			});
 		});
-		//$("#form_sample_2 :input").attr("disabled", true);
+		$("#form_sample_2 :input").attr("disabled", true);
 	});
 });
