@@ -212,7 +212,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                                     <div class="form-group">
                                                                         <label class="control-label">Office Email ID
                                                                         </label>    
-                                                                        <input id="officeEmailId" name="officeEmailId" type="text" class="form-control" aria-invalid="true" aria-describedby="email-error">                                                           
+                                                                        <input id="officeEmailId" name="officeEmailId" type="text" class="form-control" aria-invalid="true" aria-describedby="email-error">     
                                                                     </div>
                                                                 </div>
                                                               
@@ -231,7 +231,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                                     <div class="form-group">
                                                                         <label class="control-label">City
                                                                         </label>
-                                                                        <input name="city" id="city" type="text" class="form-control" maxlength="10">																		
+                                                                        <input name="city" id="city" type="text" class="form-control" maxlength="10">			
                                                                     </div>
                                                                 </div>                                             
                                                                 
@@ -500,14 +500,6 @@ License: You must have a valid license purchased only from themeforest(the above
                                         </div>
 
 
-
-
-
-
-
-
-
-
                                         <div class="portlet light bordered">
                                             <div class="portlet-title">
                                                 <div class="caption">
@@ -524,7 +516,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                             </div>                                    
                                             <div class="portlet-body">
                                                 <!-- BEGIN Office Info FORM-->
-                                                <form id="officeInfo" class="horizontal-form" novalidate="novalidate">
+                                                <form id="joiningDetails" class="horizontal-form" novalidate="novalidate">
                                                     <div class="form-body">
                                                         <div class="alert alert-danger display-hide">
                                                             <button class="close" data-close="alert"></button> You have some form errors. Please check below. </div>
@@ -566,21 +558,17 @@ License: You must have a valid license purchased only from themeforest(the above
                                                            
                                                             
                                                             <div class="row">  
-
-
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <label class="control-label">Confirmation Status
-                                                                        </label>                                                           
+                                                                        </label>            
                                                                         <select class="form-control" name="confirmationStatus" id="confirmationStatus">
                                                                             <option value="">Please Select</option>
-                                                                            <option value="1">On Probation</option>
-                                                                            <option value="2">Confirmed</option>
-                                                                 </select>                                                             
+                                                                            <option value="On Probation">On Probation</option>
+                                                                            <option value="Confirmed">Confirmed</option>
+                                                                        </select>                
                                                                     </div>
                                                                 </div>  
-
-
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <label class="control-label">Work Permit Number
@@ -588,10 +576,6 @@ License: You must have a valid license purchased only from themeforest(the above
                                                                         <input name="workPermitNumber" id="workPermitNumber" type="text" class="form-control" maxlength="10">
                                                                     </div>
                                                                 </div>
-
-
-
-
                                                             </div>
                                                             <div class="row"  style="padding-bottom: 10px">                                                    
                                                                 <div class="col-md-6" style="padding-bottom: 10px">
@@ -622,7 +606,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                     </div>
                                                     <div class="form-actions left">
                                                         <button type="button" class="btn default">Cancel</button>
-                                                        <button type="button" class="btn blue" id="submitOfficeInfo">
+                                                        <button type="button" class="btn blue" id="submitJoiningDetails">
                                                             <i class=""></i> Save</button>
                                                     </div>
                                                 </form>
@@ -651,7 +635,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                             </div>                                    
                                             <div class="portlet-body">
                                                 <!-- BEGIN Office Info FORM-->
-                                                <form id="officeInfo" class="horizontal-form" novalidate="novalidate">
+                                                <form id="positionDetails" class="horizontal-form" novalidate="novalidate">
                                                     <div class="form-body">
                                                         <div class="alert alert-danger display-hide">
                                                             <button class="close" data-close="alert"></button> You have some form errors. Please check below. </div>
@@ -870,7 +854,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                             </div>                                                          
                                                     <div class="form-actions left">
                                                         <button type="button" class="btn default">Cancel</button>
-                                                        <button type="button" class="btn blue" id="submitOfficeInfo">
+                                                        <button type="button" class="btn blue" id="submitPositionDetails">
                                                             <i class=""></i> Save</button>
                                                     </div>
                                                 </form>
@@ -895,17 +879,13 @@ License: You must have a valid license purchased only from themeforest(the above
                                             </div>                                    
                                             <div class="portlet-body">
                                                 <!-- BEGIN Previous Employment FORM-->
-                                                <form id="previousEmploymentDetail" class="horizontal-form" novalidate="novalidate">
+                                                <form id="performanceDetails" class="horizontal-form" novalidate="novalidate">
                                                     <div class="form-body">
                                                         <div class="alert alert-danger display-hide">
                                                             <button class="close" data-close="alert"></button> You have some form errors. Please check below. </div>
                                                         <div class="alert alert-success display-hide">
                                                             <button class="close" data-close="alert"></button> Your form validation is successful! </div>
-
-
-
-                                                            <div class="row">   
-                                                                                                             
+                                                            <div class="row">                                 
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <label class="control-label">Performance Rating FY 15_ 16
@@ -929,21 +909,13 @@ License: You must have a valid license purchased only from themeforest(the above
 
                                                     <div class="form-actions left">
                                                         <button type="button" class="btn default">Cancel</button>
-                                                        <button type="button" class="btn blue" id="submitpreviousEmployment">
+                                                        <button type="button" class="btn blue" id="submitPerformanceDetails">
                                                             <i class=""></i> Save</button>
                                                     </div>
                                                 </form>
                                                 <!-- END FORM-->
                                             </div>
                                         </div>
-
-
-
-
-
-
-
-
 
 
                                         <!-- Begin Previous Employement Details--> 
@@ -1115,8 +1087,8 @@ License: You must have a valid license purchased only from themeforest(the above
                                                                         </label>                                                           
                                                                         <select class="form-control" name="currency" id="currency">
                                                                             <option value="">Select...</option>
-                                                                            <option value="1">Bangladesh Taka(BDT)</option>
-                                                                            <option value="2">US Dollar(USD)</option>
+                                                                            <option value="BDT">Bangladesh Taka(BDT)</option>
+                                                                            <option value="USD">US Dollar(USD)</option>
                                                                         </select>                                                             
                                                                     </div>
                                                                 </div>

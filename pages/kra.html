@@ -87,7 +87,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div class="page-toolbar">
                             <!-- BEGIN THEME PANEL -->
                            
-						   <!-- END THEME PANEL -->
+                           <!-- END THEME PANEL -->
                         </div>
                         <!-- END PAGE TOOLBAR -->
                     </div>
@@ -104,7 +104,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         
                             <!-- BEGIN SAMPLE TABLE PORTLET-->
                             
-							<!-- END SAMPLE TABLE PORTLET-->
+                            <!-- END SAMPLE TABLE PORTLET-->
                         
                         <div class="col-md-12">
                             <!-- BEGIN BORDERED TABLE PORTLET-->
@@ -379,10 +379,18 @@ License: You must have a valid license purchased only from themeforest(the above
                                         </table>
                                     </div>
 
+                                    <div class="row" style="padding-bottom: 20px" hidden="true">
+                                        <div class="col-md-12">
+                                            <textarea style="resize:none" placeholder="Reason to Send Back" name="managerComment" id="managerComment" rows="3" class="form-control" rows="1"></textarea>
+                                        </div>
+                                    </div>
+
                                     <div class="row" id="submits">
                                         <div class="col-md-12">
-                                            <button type="submit" class="btn dark submitForm" id="submitForm">Sumbit</button>
+                                            <button type="submit" class="btn green submitForm" id="submitForm">Sumbit</button>
                                             <button type="submit" class="btn default" id="saveDraft">Save as Draft</button>
+                                            <button type="submit" class="btn green approve hidden" id="approve">Approve</button>
+                                            <button type="submit" class="btn red sendBack hidden" id="sendBack">Send Back</button>
                                         </div>
                                     </div>
 
