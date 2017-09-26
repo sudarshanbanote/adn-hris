@@ -1,8 +1,17 @@
 if (location.pathname == "/pages/approvals.html") {
-    var approvals = 'start active open';
+    var approvals = 'start active open';   
 }
 else if (location.pathname == "/pages/inputRequests.html") {
     var inputRequests = 'start active open';
+    var empId = localStorage.empId;
+
+    checkInputTable(empId,function(status,data){
+        if(status){
+            var awaitingResponses = data.length;            
+        }else{
+            //swal("Error!", "No input requests for you", "info")
+        }
+    });
 }
 else if (location.pathname == "/pages/clarifications.html") {
     var clarifications = 'start active open';
@@ -29,7 +38,7 @@ else if (location.pathname == "/pages/admin.html") {
     var admin = 'start active open';
 }
 
-
+var awaitingResponses = "";
 
 var sidebar = '<div class="page-sidebar-wrapper">'+
 '                <!-- BEGIN SIDEBAR -->'+
@@ -59,7 +68,7 @@ var sidebar = '<div class="page-sidebar-wrapper">'+
 '                            <a href="inputRequests.html" class="nav-link nav-toggle">'+
 '                                <i class="fa fa-sticky-note"></i>'+
 '                                <span class="title">Input Requests</span>'+
-'                                <span class="badge badge-danger">4</span>'+
+'                                <span class="badge badge-danger">1</span>'+
 '                            </a>'+
 '                        </li>'+
 '                        <li class="nav-item '+ clarifications +' ">'+
@@ -475,3 +484,12 @@ function clearLocalStorage() {
    localStorage.clear();
    console.log("Cleared Local Storage");
 };
+/*
+checkInputTable(empId,function(status,data){
+        if(status){
+            var awaitingResponses = data.length;            
+        }else{
+            //swal("Error!", "No input requests for you", "info")
+        }
+});
+*/
