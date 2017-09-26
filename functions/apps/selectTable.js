@@ -22,7 +22,25 @@ $(document).ready(function(){
 		//console.log(data);
 		var empArray = ['E10010','E10011','E10014'];
 		var initiatorId = 'E1006';
-		initiateKRA(empArray,initiatorId);
+		initiateKRA(empArray,initiatorId,function(status){
+			if(status){
+				swal({
+				  title: "Action initiated!",
+				  text: "Action initiated for selected employees.",
+				  type: "success",
+				  showCancelButton: false,
+				  confirmButtonClass: "btn-warning",
+				  confirmButtonText: "Ok",
+				  closeOnConfirm: false
+				},
+				function(){
+					console.log("Came in Swal");
+				  	window.location.href= "../index.html";	
+				});
+			}else{
+
+			}
+		});
 	});	
 
 	kraWizardSelect(dept,grade,function(status,results){
