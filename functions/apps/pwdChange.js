@@ -22,7 +22,7 @@ $(document).ready(function(){
 			console.log("password DONT match!");
 		}
 		else{
-			console.log("password match!");
+			console.log("password match! now going in changePassword");
 			//cahnge password in module
 			changePassword(username,password,function(status){
 				console.log("Password Changed");
@@ -32,16 +32,22 @@ $(document).ready(function(){
 				  text: " Please LogIn again with new password.",
 				  type: "success",
 				  showCancelButton: false,
-				  confirmButtonClass: "btn-warning",
+				  confirmButtonClass: "btn-success",
 				  confirmButtonText: "Ok",
-				  closeOnConfirm: false
+				  closeOnConfirm: true
 				},
 				function(){
 					console.log("Came in Swal");
+					clearLocalStorage();
 				  	window.location.href= "../login.html";	
 				});
 				//window.location.href= "../login.html";
 			});
 		}		
 	});
+
+	function clearLocalStorage() {
+	   localStorage.clear();
+	   console.log("Cleared Local Storage");
+	};
 });

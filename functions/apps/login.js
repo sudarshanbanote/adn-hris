@@ -25,7 +25,7 @@ $('.forget-password').click(function(){
 					$("#username").val();
 					$("#password").val();
 					if(data.get("passwordReset")){
-						window.location.href= "pages/kra.html"; //redirect to index page if password is changed once
+						window.location.href= "pages/userProfile.html"; //redirect to index page if password is changed once
 					}
 					else{
 						window.location.href= "pages/password_change.html"; //redirect to change password for new user

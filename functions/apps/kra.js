@@ -1,7 +1,12 @@
 $(document).ready(function(){
+	/* //function to check wether the user is logged in
+	var login = localStorage.loggedIn;
+	if(!login){
+		window.location.href= "../login.html";
+	}*/
 	console.log("Jquery Loaded");
-	//checkInitiate();
-	//var kraCategory = ['Strategic Initiative','Functional Deliverables','Financial Deliverables','Institutionalization Quotient','People Development'];
+	checkInitiate();
+	
 	$("#submitForm").click(function(){
 		validateKra();
 	});
@@ -9,16 +14,32 @@ $(document).ready(function(){
 		validateKraDraft();
 	});
 });
-/*
+
 function checkInitiate(){
 	console.log("Checking wether KRA was initaite");
-	checkInitiate(empId,kraId,function{
-		if(){
+	var empId=localStorage.empId;
+	checkKra(empId,function(status){
+		if(status){
 			console.log("valid kra");
-		}else{}
+		}else{
+			swal({
+				  title: "No KRA was Initiated for you!",
+				  text: "If expected,contact your HR or Supervisor.",
+				  type: "warning",
+				  showCancelButton: false,
+				  confirmButtonClass: "btn-warning",
+				  confirmButtonText: "Ok",
+				  closeOnConfirm: true
+				},
+				function(){
+					//console.log("");
+				  	window.location.href= "../index.html";	
+			});
+		}
 	});
 }
-*/
+
+
 function validateKraDraft(){
 	var empObject = JSON.parse(localStorage.empObject);
 	var grade = empObject.employeeGrade;
