@@ -805,11 +805,11 @@ function addToDraftTable(type, typeId, empId, status, startDate) {
 }
 
 //function to check wether a KRA is initiated for an emplopyee
+//made when the login page would forcefully take to kra
 function checkKra(empId, callback) {
     var kraId = 'k_0';
     var Kra = Parse.Object.extend("Kra");
     var query = new Parse.Query(Kra);
-    //query.equalTo("kraId", kraId); //match kraId to table
     query.equalTo("empId", empId); //match empId to table
     query.find({
         success: function(results) {
