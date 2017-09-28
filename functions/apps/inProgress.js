@@ -1,8 +1,8 @@
 $(document).ready(function(){
-	console.log("Jquery approval requests Loaded");
+	console.log("Jquery inProgress requests Loaded");
 	var empId = localStorage.empId;
-	
-	checkApprovalTable(empId,function(status,data){
+	/*
+	checkInProgress(empId,function(status,data){
 		if(status){
 			var awaitingResponses = data.length;
 			if(awaitingResponses==0){
@@ -14,14 +14,16 @@ $(document).ready(function(){
 			}
 			for( var i = 0; i < data.length; i++ )
 	        {
-	        	var approvalListObject = '<li class="todo-projects-item">'+
+	        	var inProgressListObject = '<li class="todo-projects-item">'+
 				'    <a href="kra.html">'+
 				'        <div class="row">'+
 				'            <div class="col-sm-6 col-xs-12">'+
 				'                <img class="img-circle pull-left" style="margin-top: 5px; margin-right: 10px" src="../assets/pages/media/users/avatar1.jpg" width="54px" height="54px">'+
 				'                <h4>KRA</h4>'+
 				'                <p>'+
-				'                    <strong>'+data[i].type+'</strong> - Request form Initiator Name'+
+				'                    <strong>'+data[i].type+'</strong> - Requ
+
+				est form Initiator Name'+
 				'                </p>'+
 				'            </div>'+
 				''+
@@ -36,12 +38,12 @@ $(document).ready(function(){
 				'</li>';
 					
 				//the parent div where the div should be appended
-				$("#approvalReq ul").append(approvalListObject);
+				$("#inProgress ul").append(inProgressListObject);
 			}
 		}else{
 			console.log("came with a callback false");
-			//swal("Error!", "No Approval requests for you", "warning")
-			swal("No Approval requests for you");
+			//swal("Error!", "No inProgress requests for you", "warning")
+			swal("No inProgress requests for you");
 		}
-	});
+	});*/
 }); 
