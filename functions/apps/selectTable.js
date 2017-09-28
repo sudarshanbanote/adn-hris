@@ -20,9 +20,41 @@ $(document).ready(function(){
 		    // ... do something with data(), or this.node(), etc
 		});
 		//console.log(data);
-		var empArray = ['E1001','E1002','E1003'];
+		//this is where we will fetch the selected values from the table for now we are sending static values
+		var empArray = ['E10010','E10011','E10014'];
 		var initiatorId = 'E1006';
-		initiateKRA(empArray,initiatorId);
+		initiateKRA(empArray,initiatorId,function(status){
+			if(status){
+				swal({
+				  title: "Action initiated!",
+				  text: "Action initiated for selected employees.",
+				  type: "success",
+				  showCancelButton: false,
+				  confirmButtonClass: "btn-success",
+				  confirmButtonText: "Ok",
+				  closeOnConfirm: false
+				},
+				function(){
+					console.log("Came in Swal");
+				  	window.location.href= "../index.html";	
+				});
+			}else{
+				/*
+				swal({
+				  title: "Action already initiated!",
+				  text: "Action for selected employees already initiated.",
+				  type: "warning",
+				  showCancelButton: false,
+				  confirmButtonClass: "btn-warning",
+				  confirmButtonText: "Ok",
+				  closeOnConfirm: false
+				},
+				function(){
+					console.log("Came in Swal");
+				  	window.location.href= "../index.html";	
+				});*/
+			}
+		});
 	});	
 
 	kraWizardSelect(dept,grade,function(status,results){
@@ -51,7 +83,7 @@ $(document).ready(function(){
 	});
 });
 
-//function to populate table
+//function to populate bootstrap datatable
 function populateList(data){
 
 	var t = $('#sample_2').DataTable();
